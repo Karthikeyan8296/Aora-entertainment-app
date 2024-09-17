@@ -10,10 +10,10 @@ export default function App() {
       </Text>
       <StatusBar style="auto" />
       <Link
-        href="/example"
+        href="/home"
         style={{ color: "blue", fontWeight: "700", fontSize: 18 }}
       >
-        Go to Examples
+        Go to Home
       </Link>
     </View>
   );
