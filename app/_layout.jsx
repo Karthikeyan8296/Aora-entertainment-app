@@ -26,10 +26,10 @@ const RootLayout = () => {
 
   return (
     <>
-      <Slot />
-      {/* <Stack>
+      {/* <Slot /> */}
+      <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }} />
-      </Stack> */}
+      </Stack>
     </>
   );
 };
