@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import CustomInputField from "../../components/CustomInputField";
 import Custombutton from "../../components/Custombutton";
 import { images } from "../../constants";
-import { signIn } from "../../lib/appwrite";
+import { getCurrentUser, signIn } from "../../lib/appwrite";
 
 const SignIn = () => {
   const [input, setInput] = useState({
@@ -22,7 +22,6 @@ const SignIn = () => {
     setisSubmitting(true);
     try {
       await signIn(input.email, input.password);
-      //Setting it to global state...
 
       router.replace("/home");
     } catch (error) {
