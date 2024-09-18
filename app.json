@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "package": "com.karthikdev.aora"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/appstore.png",
         "backgroundColor": "#000000"
-      }
+      },
+      "package": "com.karthikdev.aora"
     },
     "web": {
       "favicon": "./assets/favicon.png"

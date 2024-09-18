@@ -4,6 +4,7 @@ import { Link, Redirect, router } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../constants";
 import Custombutton from "../components/Custombutton";
+import 'react-native-url-polyfill/auto'
 
 export default function App() {
   return (
@@ -45,12 +46,12 @@ export default function App() {
             containerStyles="w-80 mt-8"
           />
 
-          {/* <Link
+          <Link
             href="/home"
             style={{ color: "white", fontWeight: "700", fontSize: 18 }}
           >
             Go to Home
-          </Link> */}
+          </Link>
         </View>
       </ScrollView>
     </SafeAreaView>
